@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:padding="12dp"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edtTitulo"
+        android:hint="Título"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edtDiretor"
+        android:hint="Diretor"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edtAno"
+        android:hint="Ano de lançamento"
+        android:inputType="number"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:numStars="5"
+        android:stepSize="1"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/spnGenero"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:entries="@array/generos_array"/>
+
+    <CheckBox
+        android:id="@+id/chkCinema"
+        android:text="Já viu no cinema?"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:text="Salvar"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+    <Spinner
+        android:id="@+id/spnFiltroGenero"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:entries="@array/generos_filtro_array"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFilmes"
+        android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:layout_marginTop="8dp"/>
+</LinearLayout>

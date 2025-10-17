@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">AC2</string>
+
+    <string-array name="generos_array">
+        <item>Ação</item>
+        <item>Drama</item>
+        <item>Comédia</item>
+        <item>Ficção</item>
+        <item>Terror</item>
+        <item>Romance</item>
+        <item>Outro</item>
+    </string-array>
+
+    <string-array name="generos_filtro_array">
+        <item>Todos</item>
+        <item>Ação</item>
+        <item>Drama</item>
+        <item>Comédia</item>
+        <item>Ficção</item>
+        <item>Terror</item>
+        <item>Romance</item>
+        <item>Outro</item>
+    </string-array>
+</resources>
